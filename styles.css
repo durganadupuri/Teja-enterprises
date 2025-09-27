@@ -1,0 +1,400 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e1e1e1 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.hero {
+    background: url('images/hero_background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 50px;
+    margin-top: 60px; /* Adjust for fixed navbar */
+}
+
+.contact-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.gstin {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.brand-logo {
+    width: 200px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slogan {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.trust {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.products {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    flex: 1 1 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* About section */
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Contact section */
+.contact {
+    background: linear-gradient(135deg, #f0f0f0 0%, #d0d0d0 100%);
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        flex-direction: column;
+        background-color: rgba(51, 51, 51, 0.95);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        padding: 20px;
+        display: block;
+    }
+
+    .nav-container {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: 80px 20px 40px;
+    }
+
+    .logo h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text {
+        padding: 25px;
+    }
+
+    .brand-logo {
+        width: 150px;
+    }
+
+    .slogan {
+        font-size: 1.2em;
+    }
+
+    .trust {
+        font-size: 1em;
+    }
+
+    .about-content,
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-grid {
+        gap: 15px;
+    }
+
+    .product-item {
+        flex: 1 1 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 2em;
+    }
+
+    .hero-text {
+        padding: 20px;
+    }
+
+    .brand-logo {
+        width: 120px;
+    }
+
+    .slogan {
+        font-size: 1em;
+    }
+
+    .trust {
+        font-size: 0.9em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+}
